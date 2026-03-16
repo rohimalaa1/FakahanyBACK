@@ -3,6 +3,10 @@ import { dbconect } from './DbConnection/db.user.js'
 import { userRouter } from './Router/user.router.js'
 import cors from "cors";
 import  dotenv from 'dotenv';
+import cors from "cors";
+
+app.use(cors({ origin: "*"}))
+
 dotenv.config()
 const app = express()
 const port = process.env.PORT||3009

@@ -7,7 +7,6 @@
   "scripts": {
     "start": "node index.js",
     "watch": "nodemon --ext"
-   
   },
   "keywords": [],
   "author": "",
