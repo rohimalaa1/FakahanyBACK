@@ -29,7 +29,7 @@ app.use(express.json());
 
 // ثم CORS
 app.use(cors({
-  origin: 'http://localhost:5173', // لازم تحدد ال origin اللي منه هتيجي الريكوست
+  origin: '*', // لازم تحدد ال origin اللي منه هتيجي الريكوست
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true, // لو هتستخدم كوكيز
 }));
