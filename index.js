@@ -1,14 +1,13 @@
 import express from 'express'
 import { dbconect } from './DbConnection/db.user.js'
 import { userRouter } from './Router/user.router.js'
-import cors from "cors";
 import  dotenv from 'dotenv';
 import cors from "cors";
 
-app.use(cors({ origin: "*"}))
 
 dotenv.config()
 const app = express()
+app.use(cors())
 const port = process.env.PORT||3009
 app.use(express.json())
 app.use(cors());
